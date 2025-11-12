@@ -1,10 +1,16 @@
-﻿namespace task2
+﻿using NullExample;
+
+namespace task2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            NullOperations operations = new NullOperations();
+            operations.PerformNullChecks();
+
+            // Keep console open
+            Console.ReadLine();
         }
     }
 }
